@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Болота</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__map">
+      <svg width="560" height="270" version="1.1" class="swamp-map" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1366 768"
+        style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+        <path class="st0 nord-swamp__map" d="M726.5,478.7l0-1.2c6.7-61.9,25.2-82.4,41.6-99.9c23.4-25.1,20.4-45.1,17.8-61.8
+	c-10-64.2-45.4-119.3-55.1-197.8c-3.8-30.5-23.1-59-19.3-89.5l0,0.2c-33.2,0.9-71.4,15-113.9,51.7
+	c-111.9,96.7-164.1,165.1-288.3,88.1c-34.3-21.3-224.8-62-133,156.5l8.2,14.5c33.4-3.8,60.1,18.8,90,34.2
+  c59.8,30.7,163,22.8,340.1,75.4c43,12.8,56.8,26.4,100.1,27.2C714.8,476.3,725.5,477.5,726.5,478.7z" />
+        <path class="st0 east-swamp__map" d="M1160.2,450.6c-7.5,1.7-96.9,21.9-168.8,44.1c-160.7,49.5-226.2-2.9-265-15.7l0.2-1.5
+	c6.7-61.9,25.2-82.4,41.6-99.9c23.4-25.1,20.4-45.1,17.8-61.8c-10-64.2-45.4-119.3-55.1-197.8c-3.8-30.4-23-58.9-19.3-89.3v0
+	c75.7-1.4,125.7,65.9,142.8,90.8c34.3,50,123,97.5,143.1,106.9c27.5,12.9,140.1,24.1,148.7,141
+  C1146.6,375,1150.2,405.5,1160.2,450.6L1160.2,450.6z" />
+  <path class="st0 west-swamp__map"
+          d="M726.4,478.5c-6-2-12.6-2.2-12.6-2.2c-43.3-0.8-57.1-14.5-100.1-27.2c-177.2-52.6-279.3-44.7-339.1-75.4
+	c-29.9-15.4-56.6-38-90-34.2l0,0c19.4,29.9,54.9,62.2,65.9,141.4c17.1,122.6,118.1,53.6,146.7,111.4
+	c36.6,73.9,79.8,108.2,102.5,109.6c17.4,1.1,129.1-50.3,263.1-31.5l-0.2,0.1C749.7,657.5,713.7,598.8,726.4,478.5L726.4,478.5z" />
+        <path class="st0 south-swamp__map" d="M726.3,479c38.8,12.8,104.3,65.2,265,15.7c72.1-22.2,161.8-42.5,168.9-44.1l0,0c9.7,41.8,24.7,96.1,47.4,156.4
+	c44.8,119.4-190.1,169.5-319.1,103.1c-42.8-22-85.2-34-126-39.6C749.7,657.5,713.8,599,726.3,479L726.3,479z" />
+        <path class="st0" d="M1199.2,678.7c-70.1-24.9-130.1-58.9-203.2-72.7c-124.5-23.5-249.4-87-254-102c-13-42-54-66-115.3-77.3
+	C485.9,400.8,533.1,298.8,515,281" />
+        <path class="st0" d="M1199.2,678.7c-70.1-24.9-130.1-58.9-203.2-72.7c-124.5-23.5-249.4-87-254-102
+	c-35.5-27.5-195.2-26.2-256.5-37.5" />
+        <path class="st0"
+          d="M1203.6,683.1c-27.1-88.6-113.1-111.6-120.6-197.5c-0.5-6,29.3-71.6-51.6-81.6
+	c-116.8-14.5-84.8-157.5-176.6-155.3c-46.6,1.1-57.1-15.1-44.4-42.2c39.2-83.1-7.4-106.7-23.1-109.6c-11.2-2.1-25.1-2.7-31.3,6.7" />
+        <path class="st0" d="M713.8,476.3" />
+        <circle class="st1" cx="1206.5" cy="682.5" r="8" />
+        <circle class="st1" cx="514.5" cy="280.5" r="8" />
+        <circle class="st1" cx="485.5" cy="466.5" r="8" />
+        <circle class="st1" cx="1126.5" cy="650.5" r="8" />
+        <circle class="st1" cx="995.5" cy="605.5" r="8" />
+        <circle class="st1" cx="1082.5" cy="488.5" r="8" />
+        <circle class="st1" cx="1047.5" cy="406.5" r="8" />
+        <circle class="st1" cx="755.5" cy="102.5" r="8" />
+        <circle class="st1" cx="742.5" cy="503.5" r="8" />
+      </svg>
+    </div>
+    <div class="header__aside">
+
+    </div>
+    <div class="header__slider">
+      <div class="header__slider-item-first slider-item ">
+        <div class="header__slider-item-first-mask">
+          <div class="slider-item__info">
+            <div class="slider-item__info-suptitle suptitle-left">Пройди свой путь</div>
+            <div class="slider-item__info-title">Западные Болота</div>
+            <div class="slider-item__info-suptext suptitle-left">Проверь себя</div>
+            <div class="slider-item__info-text">Подробнее</div>
+            <a href="" class="slider-item__info-link">
+              <img src="img/arrows-right.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__slider-item-second slider-item slider-item">
+        <div class="header__slider-item-second-mask">
+          <div class="slider-item__info">
+            <div class="slider-item__info-suptitle suptitle-left">Какова твоя удача</div>
+            <div class="slider-item__info-title">Южные болота</div>
+            <div class="slider-item__info-suptext suptitle-left">Только здесь это узнаешь</div>
+            <div class="slider-item__info-text">Подробнее</div>
+            <a href="" class="slider-item__info-link">
+              <img src="img/arrows-right.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__slider-item-third slider-item slider-item">
+        <div class="header__slider-item-third-mask">
+          <div class="slider-item__info">
+            <div class="slider-item__info-suptitle suptitle-left">Пройди до конца</div>
+            <div class="slider-item__info-title">Северные болота</div>
+            <div class="slider-item__info-suptext suptitle-left">Проверь свою ярость</div>
+            <div class="slider-item__info-text">Подробнее</div>
+            <a href="" class="slider-item__info-link">
+              <img src="img/arrows-right.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__slider-item-fourth slider-item slider-item">
+        <div class="header__slider-item-fourth-mask">
+          <div class="slider-item__info">
+            <div class="slider-item__info-suptitle suptitle-left">Дерись как горный лев</div>
+            <div class="slider-item__info-title">Восточные болота</div>
+            <div class="slider-item__info-suptext suptitle-left">Стань повелителем болот</div>
+            <div class="slider-item__info-text">Подробнее</div>
+            <a href="" class="slider-item__info-link">
+              <img src="img/arrows-right.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots">
+      <a href="western-inner.html" class="slider-dots__link">
+        <div class="slider-dots__item">
+          <div class="dots-box dots-box__first">
+            <div class="dots-box__number">01</div>
+            <div class="dots-box__name">Западные болота</div>
+          </div>
+        </div>
+      </a>
+      <div class="slider-dots__item">
+        <div class="dots-box dots-box__second">
+          <div class="dots-box__number">02</div>
+          <div class="dots-box__name">Южные болота</div>
+        </div>
+      </div>
+      <div class="slider-dots__item">
+        <div class="dots-box dots-box__third">
+          <div class="dots-box__number">03</div>
+          <div class="dots-box__name">Северные болота</div>
+        </div>
+      </div>
+      <div class="slider-dots__item">
+        <div class="dots-box dots-box__fourth">
+          <div class="dots-box__number">04</div>
+          <div class="dots-box__name">Восточные болота</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

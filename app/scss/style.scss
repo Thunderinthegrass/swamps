@@ -1,0 +1,269 @@
+// @import '../../node_modules/slick-carousel/slick/slick';
+// @import '../../node_modules/magnific-popup/dist/magnific-popup';
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+@import "western-swamps";
+
+.header {
+  position: relative;
+  height: 100vh;
+}
+
+.header__slider {
+  &-item-first {
+    background-image: url(../img/105741-otrazhenie-boloto-nebo-pustynya-voda-2560x1707.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+    &-mask {
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.397);
+    }
+  }
+  &-item-second {
+    background-image: url(../img/1572947272_7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    &-mask {
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.411);
+    }
+  }
+  &-item-third {
+    background-image: url(../img/1572947375_25.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    &-mask {
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.11);
+    }
+  }
+  &-item-fourth {
+    background-image: url(../img/2618137.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    &-mask {
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.336);
+    }
+  }
+}
+.slider-item__info {
+  text-align: right;
+  position: absolute;
+  right: 80px;
+  bottom: 110px;
+  text-transform: uppercase;
+}
+.slider-item__info-suptitle {
+  margin-bottom: 5px;
+  text-shadow: black 2px 3px 4px;
+}
+.slider-item__info-title {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 86px;
+  margin-bottom: 48px;
+  text-shadow: black 2px 3px 4px;
+  opacity: 0.8;
+}
+.slider-item__info-suptext {
+  margin-bottom: 8px;
+  text-shadow: black 2px 3px 4px;
+}
+.slider-item__info-text {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  margin-bottom: 20px;
+  text-shadow: black 2px 3px 4px;
+}
+.slider-item__info-link {
+  display: inline-block;
+  text-align: right;
+}
+.slider-arrows {
+  position: absolute;
+  top: 46px;
+  right: 80px;
+  cursor: pointer;
+  z-index: 1;
+}
+.slider-arrows__left {
+  right: 125px;
+}
+.slider-dots {
+  position: absolute;
+  max-width: 920px;
+  width: 100%;
+  right: 50px;
+  bottom: 36px;
+  .slick-current {
+    .dots-box {
+      background: rgba(0, 0, 0, 0.438);
+      &__first::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 4px;
+        width: 200px;
+        background: rgb(231, 53, 86);
+        box-shadow: 1px 2px 10px rgb(231, 53, 86);
+      }
+      &__second::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 230px;
+        height: 4px;
+        width: 200px;
+        background: rgb(132, 164, 47);
+        box-shadow: 1px 2px 10px rgb(132, 164, 47);
+      }
+      &__third::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 460px;
+        height: 4px;
+        width: 200px;
+        background: rgb(51, 71, 86);
+        box-shadow: 1px 2px 10px rgb(51, 71, 86);
+      }
+      &__fourth::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 690px;
+        height: 4px;
+        width: 200px;
+        background: rgb(250, 145, 72);
+        box-shadow: 1px 2px 10px rgb(250, 145, 72);
+      }
+    }
+  }
+  &__link {
+    outline: none;
+  }
+}
+.dots-box {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  height: 28px;
+  align-items: center;
+  border-top: 4px solid #fff;
+  padding-top: 6px;
+  background: rgba(0, 0, 0, 0.2);
+  &__number {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 800;
+  }
+  &__name {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+  }
+}
+.header__title {
+  font-size: 200px;
+  line-height: 156px;
+  text-transform: uppercase;
+  font-weight: 800;
+  opacity: 0.07;
+  max-width: 467px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.header__aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.header__map {
+  position: absolute;
+  top: 50px;
+  right: 150px;
+  z-index: 1;
+}
+.swamp-map{
+  margin: 0 -120px;
+}
+.st0 {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 2;
+  // opacity: 0.5;
+}
+.st1 {
+  fill: #ffffff;
+  stroke: none;
+  stroke-miterlimit: 10;
+  // opacity: 0.5;
+}
+.nord-swamp__map{
+  stroke-dashoffset: 1900;
+  stroke-dasharray: 1900;
+  animation: nord 3.3s linear 1s forwards;
+}
+@keyframes nord{
+  0%{
+    fill:rgba(231, 53, 86, 0.01);
+  }
+  100%{
+    stroke-dashoffset: 0;
+    fill:rgba(231, 53, 86, 0.5);
+  }
+}
+.east-swamp__map{
+  stroke-dashoffset: 1900;
+  stroke-dasharray: 1900;
+  animation: east 5s linear 1s forwards;
+}
+@keyframes east{
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+.west-swamp__map{
+  stroke-dashoffset: 1900;
+  stroke-dasharray: 1900;
+  animation: west 3s linear 1s forwards;
+}
+@keyframes west{
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+.south-swamp__map{
+  stroke-dashoffset: 1900;
+  stroke-dasharray: 1900;
+  animation: south 3s linear 1s forwards;
+}
+@keyframes south{
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+
+@import "media";
