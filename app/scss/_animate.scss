@@ -1,0 +1,141 @@
+.nord-swamp__map{
+  stroke-dashoffset: 1900;
+  stroke-dasharray: 1900;
+  animation: nord 3.3s linear 1s forwards;
+}
+@keyframes nord{
+  0%{
+    
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+.nord-swamp__map-fill{
+  animation: nord-fill 3.3s linear 1s forwards;
+}
+@keyframes nord-fill{
+  0%{
+    fill:rgba(51, 71, 86, 0.01);
+  }
+  100%{
+    fill:rgba(51, 71, 86, 0.5);
+  }
+}
+.south-swamp__map{
+  stroke-dashoffset: 1900;
+  stroke-dasharray: 1900;
+  animation: south 3s linear 1s forwards;
+}
+@keyframes south{
+  0%{
+    
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+.south-swamp__map-fill{
+  animation: south-fill 3s linear 2s forwards;
+}
+@keyframes south-fill{
+  0%{
+    fill:rgba(132, 164, 47, 0.01);
+  }
+  100%{
+    fill:rgba(132, 164, 47, 0.5);
+  }
+}
+.east-swamp__map{
+  stroke-dashoffset: 1900;
+  stroke-dasharray: 1900;
+  animation: east 3s linear 1s forwards;
+}
+@keyframes east{
+  0%{
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+.east-swamp__map-fill{
+  animation: east-fill 5s linear 1s forwards;
+}
+@keyframes east-fill{
+  0%{
+  }
+  100%{
+    fill:rgba(250, 145, 72, 0.5);
+  }
+}
+.west-swamp__map{
+  stroke-dashoffset: 1900;
+  stroke-dasharray: 1900;
+  animation: west 3s linear 1s forwards;
+}
+@keyframes west{
+  0%{
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+.west-swamp__map-fill{
+  animation: west-fill 8s linear 1s forwards;
+}
+@keyframes west-fill{
+  0%{
+    fill:rgba(231, 53, 86, 0.01);
+  }
+  100%{
+    fill:rgba(231, 53, 86, 0.5);
+  }
+}
+.west-way{
+  stroke-dashoffset: 800;
+  stroke-dasharray: 800;
+  animation: west-way 8s infinite 4s;
+}
+@keyframes west-way{
+  0%{
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+.south-way{
+  stroke-dashoffset: 500;
+  stroke-dasharray: 500;
+  animation: south-way 6s infinite 4s;
+}
+@keyframes south-way{
+  0%{
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+.nord-way{
+  stroke-dashoffset: 900;
+  stroke-dasharray: 900;
+  animation: nord-way 8s infinite 4s;
+}
+@keyframes nord-way{
+  0%{
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+.east-way{
+  stroke-dashoffset: 900;
+  stroke-dasharray: 900;
+  animation: east-way 8s infinite 4s;
+}
+@keyframes east-way{
+  0%{
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}

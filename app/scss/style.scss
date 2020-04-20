@@ -4,6 +4,7 @@
 @import "libs";
 @import "fonts";
 @import "global";
+@import "animate";
 @import "western-swamps";
 
 .header {
@@ -71,26 +72,26 @@
 }
 .slider-item__info-suptitle {
   margin-bottom: 5px;
-  text-shadow: black 2px 3px 4px;
+  // text-shadow: black 2px 3px 4px;
 }
 .slider-item__info-title {
   font-size: 80px;
   font-weight: 800;
   line-height: 86px;
   margin-bottom: 48px;
-  text-shadow: black 2px 3px 4px;
+  // text-shadow: black 2px 3px 4px;
   opacity: 0.8;
 }
 .slider-item__info-suptext {
   margin-bottom: 8px;
-  text-shadow: black 2px 3px 4px;
+  // text-shadow: black 2px 3px 4px;
 }
 .slider-item__info-text {
   font-size: 40px;
   font-weight: 800;
   line-height: 48px;
   margin-bottom: 20px;
-  text-shadow: black 2px 3px 4px;
+  // text-shadow: black 2px 3px 4px;
 }
 .slider-item__info-link {
   display: inline-block;
@@ -101,10 +102,16 @@
   top: 46px;
   right: 80px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 .slider-arrows__left {
   right: 125px;
+}
+.slick-track{
+  width: 920px;
+}
+.slick-list .draggable{
+  padding: 0px 0px 0px 50px;
 }
 .slider-dots {
   position: absolute;
@@ -129,17 +136,17 @@
         position: absolute;
         content: "";
         top: 0;
-        left: 230px;
+        left: 205px;
         height: 4px;
         width: 200px;
-        background: rgb(132, 164, 47);
+        background: rgb(157, 189, 71);
         box-shadow: 1px 2px 10px rgb(132, 164, 47);
       }
       &__third::before {
         position: absolute;
         content: "";
         top: 0;
-        left: 460px;
+        left: 410px;
         height: 4px;
         width: 200px;
         background: rgb(51, 71, 86);
@@ -149,7 +156,7 @@
         position: absolute;
         content: "";
         top: 0;
-        left: 690px;
+        left: 615px;
         height: 4px;
         width: 200px;
         background: rgb(250, 145, 72);
@@ -170,6 +177,7 @@
   border-top: 4px solid #fff;
   padding-top: 6px;
   background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   &__number {
     font-size: 24px;
     line-height: 34px;
@@ -206,7 +214,7 @@
   z-index: 1;
 }
 .swamp-map{
-  margin: 0 -120px;
+  
 }
 .st0 {
   fill: none;
@@ -221,49 +229,6 @@
   stroke-miterlimit: 10;
   // opacity: 0.5;
 }
-.nord-swamp__map{
-  stroke-dashoffset: 1900;
-  stroke-dasharray: 1900;
-  animation: nord 3.3s linear 1s forwards;
-}
-@keyframes nord{
-  0%{
-    fill:rgba(231, 53, 86, 0.01);
-  }
-  100%{
-    stroke-dashoffset: 0;
-    fill:rgba(231, 53, 86, 0.5);
-  }
-}
-.east-swamp__map{
-  stroke-dashoffset: 1900;
-  stroke-dasharray: 1900;
-  animation: east 5s linear 1s forwards;
-}
-@keyframes east{
-  100%{
-    stroke-dashoffset: 0;
-  }
-}
-.west-swamp__map{
-  stroke-dashoffset: 1900;
-  stroke-dasharray: 1900;
-  animation: west 3s linear 1s forwards;
-}
-@keyframes west{
-  100%{
-    stroke-dashoffset: 0;
-  }
-}
-.south-swamp__map{
-  stroke-dashoffset: 1900;
-  stroke-dasharray: 1900;
-  animation: south 3s linear 1s forwards;
-}
-@keyframes south{
-  100%{
-    stroke-dashoffset: 0;
-  }
-}
+
 
 @import "media";
