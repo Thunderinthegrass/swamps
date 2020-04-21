@@ -1,3 +1,22 @@
+.header__map {
+  position: absolute;
+  top: 50px;
+  right: 150px;
+  z-index: 1;
+}
+.st0 {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 2;
+  // opacity: 0.5;
+}
+.st1 {
+  fill: #ffffff;
+  stroke: none;
+  stroke-miterlimit: 10;
+  // opacity: 0.5;
+}
 .nord-swamp__map{
   stroke-dashoffset: 1900;
   stroke-dasharray: 1900;
@@ -16,10 +35,10 @@
 }
 @keyframes nord-fill{
   0%{
-    fill:rgba(51, 71, 86, 0.01);
+    fill:rgba(192,149,81, 0.01);
   }
   100%{
-    fill:rgba(51, 71, 86, 0.5);
+    fill:rgba(192,149,81, 0.5);
   }
 }
 .south-swamp__map{

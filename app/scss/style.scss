@@ -110,14 +110,11 @@
 .slick-track{
   width: 920px;
 }
-.slick-list .draggable{
-  padding: 0px 0px 0px 50px;
-}
 .slider-dots {
   position: absolute;
   max-width: 920px;
   width: 100%;
-  right: 50px;
+  right: 25px;
   bottom: 36px;
   .slick-current {
     .dots-box {
@@ -149,8 +146,8 @@
         left: 410px;
         height: 4px;
         width: 200px;
-        background: rgb(51, 71, 86);
-        box-shadow: 1px 2px 10px rgb(51, 71, 86);
+        background: rgb(192,149,81);
+        box-shadow: 1px 2px 10px rgb(192,149,81);
       }
       &__fourth::before {
         position: absolute;
@@ -206,29 +203,32 @@
   top: 0;
   left: 0;
   z-index: 2;
+  border-right: 1px solid rgba(#fff, 0.25);
+  height: 100vh;
+  width: 170px;
 }
-.header__map {
-  position: absolute;
-  top: 50px;
-  right: 150px;
-  z-index: 1;
+.header__logo{
+  min-height: 280px;
 }
-.swamp-map{
-  
+.menu{
+  &__list{
+    text-align: center;
+    li{
+      margin-bottom: 20px;
+    }
+    a{
+      display: block;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 3px;
+      font-weight: 500;
+    }
+    span{
+      display: block;
+    }
+  }
 }
-.st0 {
-  fill: none;
-  stroke: #fff;
-  stroke-miterlimit: 10;
-  stroke-width: 2;
-  // opacity: 0.5;
-}
-.st1 {
-  fill: #ffffff;
-  stroke: none;
-  stroke-miterlimit: 10;
-  // opacity: 0.5;
-}
+
 
 
 @import "media";
