@@ -3,158 +3,402 @@
   top: 50px;
   right: 150px;
   z-index: 1;
+  .st0 {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 2;
+  }
+  .st1 {
+    fill: #ffffff;
+    stroke: none;
+    stroke-miterlimit: 10;
+  }
 }
-.st0 {
-  fill: none;
-  stroke: #fff;
-  stroke-miterlimit: 10;
-  stroke-width: 2;
-  // opacity: 0.5;
-}
-.st1 {
-  fill: #ffffff;
-  stroke: none;
-  stroke-miterlimit: 10;
-  // opacity: 0.5;
-}
-.nord-swamp__map{
+.nord-swamp__map {
   stroke-dashoffset: 1900;
   stroke-dasharray: 1900;
   animation: nord 3.3s linear 1s forwards;
 }
-@keyframes nord{
-  0%{
-    
+@keyframes nord {
+  0% {
   }
-  100%{
+  100% {
     stroke-dashoffset: 0;
   }
 }
-.nord-swamp__map-fill{
+.nord-swamp__map-fill {
   animation: nord-fill 3.3s linear 1s forwards;
 }
-@keyframes nord-fill{
-  0%{
-    fill:rgba(192,149,81, 0.01);
+@keyframes nord-fill {
+  0% {
+    fill: rgba(192, 149, 81, 0.01);
   }
-  100%{
-    fill:rgba(192,149,81, 0.5);
+  100% {
+    fill: rgba(192, 149, 81, 0.5);
   }
 }
-.south-swamp__map{
+.south-swamp__map {
   stroke-dashoffset: 1900;
   stroke-dasharray: 1900;
   animation: south 3s linear 1s forwards;
 }
-@keyframes south{
-  0%{
-    
+@keyframes south {
+  0% {
   }
-  100%{
+  100% {
     stroke-dashoffset: 0;
   }
 }
-.south-swamp__map-fill{
+.south-swamp__map-fill {
   animation: south-fill 3s linear 2s forwards;
 }
-@keyframes south-fill{
-  0%{
-    fill:rgba(132, 164, 47, 0.01);
+@keyframes south-fill {
+  0% {
+    fill: rgba(132, 164, 47, 0.01);
   }
-  100%{
-    fill:rgba(132, 164, 47, 0.5);
+  100% {
+    fill: rgba(132, 164, 47, 0.5);
   }
 }
-.east-swamp__map{
+.east-swamp__map {
   stroke-dashoffset: 1900;
   stroke-dasharray: 1900;
   animation: east 3s linear 1s forwards;
 }
-@keyframes east{
-  0%{
+@keyframes east {
+  0% {
   }
-  100%{
+  100% {
     stroke-dashoffset: 0;
   }
 }
-.east-swamp__map-fill{
+.east-swamp__map-fill {
   animation: east-fill 5s linear 1s forwards;
 }
-@keyframes east-fill{
-  0%{
+@keyframes east-fill {
+  0% {
   }
-  100%{
-    fill:rgba(250, 145, 72, 0.5);
+  100% {
+    fill: rgba(250, 145, 72, 0.5);
   }
 }
-.west-swamp__map{
+.west-swamp__map {
   stroke-dashoffset: 1900;
   stroke-dasharray: 1900;
   animation: west 3s linear 1s forwards;
 }
-@keyframes west{
-  0%{
+@keyframes west {
+  0% {
   }
-  100%{
+  100% {
     stroke-dashoffset: 0;
   }
 }
-.west-swamp__map-fill{
+.west-swamp__map-fill {
   animation: west-fill 8s linear 1s forwards;
 }
-@keyframes west-fill{
-  0%{
-    fill:rgba(231, 53, 86, 0.01);
+@keyframes west-fill {
+  0% {
+    fill: rgba(231, 53, 86, 0.01);
   }
-  100%{
-    fill:rgba(231, 53, 86, 0.5);
+  100% {
+    fill: rgba(231, 53, 86, 0.5);
   }
 }
-.west-way{
+.west-way {
   stroke-dashoffset: 800;
   stroke-dasharray: 800;
   animation: west-way 8s infinite 4s;
 }
-@keyframes west-way{
-  0%{
+@keyframes west-way {
+  0% {
   }
-  100%{
+  100% {
     stroke-dashoffset: 0;
   }
 }
-.south-way{
+.south-way {
   stroke-dashoffset: 500;
   stroke-dasharray: 500;
   animation: south-way 6s infinite 4s;
 }
-@keyframes south-way{
-  0%{
+@keyframes south-way {
+  0% {
   }
-  100%{
+  100% {
     stroke-dashoffset: 0;
   }
 }
-.nord-way{
+.nord-way {
   stroke-dashoffset: 900;
   stroke-dasharray: 900;
   animation: nord-way 8s infinite 4s;
 }
-@keyframes nord-way{
-  0%{
+@keyframes nord-way {
+  0% {
   }
-  100%{
+  100% {
     stroke-dashoffset: 0;
   }
 }
-.east-way{
+.east-way {
   stroke-dashoffset: 900;
   stroke-dasharray: 900;
   animation: east-way 8s infinite 4s;
 }
-@keyframes east-way{
-  0%{
+@keyframes east-way {
+  0% {
   }
-  100%{
+  100% {
     stroke-dashoffset: 0;
+  }
+}
+// route-icon-----------------------------------------------------------------
+.route-icon {
+  width: 100px;
+  .cls-1 {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+  }
+  .cls-2 {
+    fill: #fff;
+    stroke: none;
+    transition: 0.5s;
+  }
+  &:hover {
+    .route-point {
+      fill: #dd1212;
+      stroke-width: 2px;
+    }
+  }
+}
+.route {
+  stroke-dashoffset: 1100;
+  stroke-dasharray: 1100;
+  animation: route 7s linear 0.5s infinite;
+}
+@keyframes route {
+  0% {
+  }
+  10% {
+    stroke-dashoffset: 1100;
+  }
+  80%{
+    stroke: rgb(238, 6, 6);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: rgb(238, 6, 6);
+  }
+}
+// route-icon-end--------------------------------------------
+// hut-icon--------------------------------------------------
+.hut-icon {
+  width: 100px;
+  stroke-width: 2px;
+  .window {
+    fill: #dd121200;
+  }
+  .cls-1 {
+    fill: transparent;
+    transition: 0.5s;
+  }
+  .cls-1,
+  .cls-2,
+  .cls-3 {
+    stroke: #fff;
+    stroke-miterlimit: 10;
+  }
+  .cls-3 {
+    fill: #fff;
+  }
+  &:hover {
+    .window {
+      fill: #cfa226;
+    }
+  }
+}
+.smoke-bottom {
+  fill: rgba(255, 255, 255, 0);
+  animation: smoke-bottom 5s infinite 1s;
+}
+@keyframes smoke-bottom {
+  0% {
+    fill: rgba(#7e93f1, 1);
+  }
+  70% {
+    fill: rgba(#7e93f1, 1);
+  }
+  100% {
+    fill: rgbaa(#7e93f1, 0);
+  }
+}
+.smoke-middle {
+  fill: rgba(255, 255, 255, 0);
+  animation: smoke-middle 5s infinite 2s;
+}
+@keyframes smoke-middle {
+  0% {
+    fill: rgba(#7e93f1, 1);
+  }
+  70% {
+    fill: rgba(#7e93f1, 1);
+  }
+  100% {
+    fill: rgba(#7e93f1, 0);
+  }
+}
+.smoke-top {
+  fill: rgba(#7e93f1, 0);
+  animation: smoke-top 5s infinite 3s;
+}
+@keyframes smoke-top {
+  0% {
+    fill: rgba(#7e93f1, 1);
+  }
+  70% {
+    fill: rgba(#7e93f1, 1);
+  }
+  100% {
+    fill: rgba(255, 255, 255, 0);
+  }
+}
+// hut-icon-end--------------------------------------------------
+// guides-icons--------------------------------------------------
+.peace-guide-icon {
+  height: 130px;
+  width: 60px;
+  .cls-1,
+  .cls-3 {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+  }
+
+  .cls-1 {
+    stroke-width: 2px;
+  }
+
+  .cls-2 {
+    fill: #fff;
+  }
+
+  .cls-3 {
+    stroke-width: 1px;
+  }
+}
+.smoke {
+  stroke-dashoffset: 150;
+  stroke-dasharray: 150;
+  animation: smoke 6s linear 1.5s infinite;
+}
+@keyframes smoke {
+  0% {
+  }
+  10% {
+    stroke-dashoffset: 150;
+  }
+  60%{
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-opacity: .01;
+  }
+}
+.guide-shoot {
+  height: 130px;
+  width: 85px;
+  display: none;
+  .cls-1,
+  .cls-2 {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+  }
+
+  .cls-1 {
+    stroke-width: 2px;
+  }
+}
+.guide-link {
+  position: relative;
+}
+.coal {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 3px;
+  background: rgb(238, 6, 6);
+  border-radius: 50%;
+  right: 43px;
+  top: 35px;
+  animation: coal 6s linear 1.5s infinite;
+}
+@keyframes coal {
+  0% {
+    box-shadow: 0 0 0px 0px rgb(206, 12, 12);
+  }
+  8% {
+    box-shadow: 0 0 10px 5px rgb(206, 12, 12);
+  }
+  10% {
+    box-shadow: 0 0 0px 0px rgb(206, 12, 12);
+  }
+}
+.guide-link:hover {
+  .guide-shoot {
+    display: inline-block;
+  }
+  .peace-guide-icon {
+    display: none;
+  }
+  .coal {
+    width: 4px;
+    height: 4px;
+    top: 32px;
+    right: 1px;
+    animation: shoot 1.5s linear infinite;
+  }
+  @keyframes shoot {
+    0% {
+      background: transparent;
+      box-shadow: 0 0 0px 0px rgb(206, 12, 12);
+    }
+    5% {
+      background: transparent;
+      box-shadow: 0 0 0px 0px rgb(206, 12, 12);
+    }
+    15% {
+      background: rgb(238, 6, 6);
+      box-shadow: 0 0 10px 5px rgb(228, 60, 9);
+    }
+    23% {
+      background: transparent;
+      box-shadow: 0 0 0px 0px rgb(206, 12, 12);
+    }
+    100% {
+      background: transparent;
+      box-shadow: 0 0 0px 0px rgb(206, 12, 12);
+    }
+  }
+}
+// guides-icons-end----------------------------------------------
+// reeds---------------------------------------------------------
+.reeds {
+  .cls-1 {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 1.5px;
+  }
+  .cls-2 {
+    fill: #fff;
+  }
+  .water-lily {
+    fill: #6e953a;
   }
 }

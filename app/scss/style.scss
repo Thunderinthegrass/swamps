@@ -199,6 +199,7 @@
   z-index: 1;
 }
 .header__aside {
+  background: rgba(82, 23, 23, 0.2);
   position: absolute;
   top: 0;
   left: 0;
@@ -208,7 +209,8 @@
   width: 170px;
 }
 .header__logo{
-  min-height: 280px;
+  padding-top: 10px;
+  min-height: 169px;
 }
 .menu{
   &__list{
@@ -217,7 +219,7 @@
       margin-bottom: 20px;
     }
     a{
-      display: block;
+      display: inline-block;
       font-size: 12px;
       line-height: 14px;
       letter-spacing: 3px;
