@@ -155,46 +155,66 @@
   }
 }
 // route-icon-----------------------------------------------------------------
+.route-icon__link {
+  position: relative;
+}
+.route-icon__link:hover {
+  .corbie-eye {
+    // box-shadow: 0 0 5px #00ff9d;
+    // box-shadow: 0 0 5px #00fff2;-топовый цвет
+    // box-shadow: 0 0 10px 5px #00e1ff;-тоже
+    box-shadow: 0 0 10px 5px #ff012b;
+  }
+}
 .route-icon {
-  width: 100px;
   .cls-1 {
     fill: none;
-    stroke: #fff;
-    stroke-miterlimit: 10;
-    stroke-width: 2px;
   }
+
+  .cls-1,
   .cls-2 {
-    fill: #fff;
-    stroke: none;
-    transition: 0.5s;
+    stroke: #fff;
+    stroke-width: 1.5px;
+    stroke-miterlimit: 10;
   }
-  &:hover {
-    .route-point {
-      fill: #dd1212;
-      stroke-width: 2px;
-    }
+
+  .cls-3 {
+    fill: #ef0c0c;
+  }
+  .corbie {
+    fill: #000;
   }
 }
-.route {
-  stroke-dashoffset: 1100;
-  stroke-dasharray: 1100;
-  animation: route 7s linear 0.5s infinite;
+.corbie-eye {
+  position: absolute;
+  background: rgb(255, 0, 0);
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  left: 38px;
+  top: 3px;
+  transition: 0.5s;
 }
-@keyframes route {
+.letters {
+  stroke: #fff;
+  fill: none;
+  stroke-width: 1px;
+  animation: letters 5s linear 1s infinite;
+  stroke-dashoffset: 30;
+  stroke-dasharray: 30;
+}
+@keyframes letters {
   0% {
   }
-  10% {
-    stroke-dashoffset: 1100;
-  }
-  80% {
-    stroke: rgb(238, 6, 6);
+  30% {
+    stroke-dashoffset: 30;
   }
   100% {
     stroke-dashoffset: 0;
-    stroke: rgb(238, 6, 6);
   }
 }
 // route-icon-end--------------------------------------------
+
 // hut-icon--------------------------------------------------
 .hut-icon {
   width: 100px;
@@ -432,8 +452,8 @@
   .gnat-wrap,
   .gnat1-wrap,
   .gnat2-wrap {
-    background:  rgba(233, 210, 7, 0.25);
-    box-shadow: 0 0 .2px .15px rgba(233, 210, 7, 0.5), 0 0 1px 5px rgba(233, 210, 7, 0.3);
+    background: rgba(233, 210, 7, 0.25);
+    box-shadow: 0 0 0.2px 0.15px rgba(233, 210, 7, 0.5), 0 0 1px 5px rgba(233, 210, 7, 0.3);
   }
 }
 
@@ -484,7 +504,7 @@
   0% {
   }
   50% {
-    transform: rotate(-180deg);
+    transform: rotate(-360deg);
   }
   100% {
     transform: rotate(0deg);
@@ -510,7 +530,10 @@
 @keyframes gnat2 {
   0% {
   }
+  50% {
+    transform: rotate(400deg);
+  }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }

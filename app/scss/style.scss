@@ -35,7 +35,7 @@
     height: 100vh;
     &-mask {
       height: 100vh;
-      background: rgba(0, 0, 0, 0.411);
+      background: rgba(0, 0, 0, .4);
     }
   }
   &-item-third {
@@ -47,7 +47,7 @@
     height: 100vh;
     &-mask {
       height: 100vh;
-      background: rgba(0, 0, 0, 0.11);
+      background: rgba(0, 0, 0, 0.1);
     }
   }
   &-item-fourth {
@@ -59,7 +59,7 @@
     height: 100vh;
     &-mask {
       height: 100vh;
-      background: rgba(0, 0, 0, 0.336);
+      background: rgba(0, 0, 0, 0.3);
     }
   }
 }
@@ -107,7 +107,7 @@
 .slider-arrows__left {
   right: 125px;
 }
-.slick-track{
+.slick-track {
   width: 920px;
 }
 .slider-dots {
@@ -116,10 +116,20 @@
   width: 100%;
   right: 25px;
   bottom: 36px;
+  .slick-list,
+  .slick-track,
+  .slick-slide,
+  .draggable,
+  .slick-initialized,
+  .slick-slider {
+    overflow: visible !important;
+  }
   .slick-current {
+    .header__aside-west {
+    }
     .dots-box {
       background: rgba(0, 0, 0, 0.438);
-      &__first::before {
+      &__west::before {
         position: absolute;
         content: "";
         top: 0;
@@ -127,9 +137,9 @@
         height: 4px;
         width: 200px;
         background: rgb(231, 53, 86);
-        box-shadow: 1px 2px 10px rgb(231, 53, 86);
+        box-shadow: 0 0 10px rgb(231, 53, 86);
       }
-      &__second::before {
+      &__south::before {
         position: absolute;
         content: "";
         top: 0;
@@ -137,19 +147,19 @@
         height: 4px;
         width: 200px;
         background: rgb(157, 189, 71);
-        box-shadow: 1px 2px 10px rgb(132, 164, 47);
+        box-shadow: 0 0 10px rgb(132, 164, 47);
       }
-      &__third::before {
+      &__nord::before {
         position: absolute;
         content: "";
         top: 0;
         left: 410px;
         height: 4px;
         width: 200px;
-        background: rgb(192,149,81);
-        box-shadow: 1px 2px 10px rgb(192,149,81);
+        background: rgb(192, 149, 81);
+        box-shadow: 0 0 10px rgb(192, 149, 81);
       }
-      &__fourth::before {
+      &__east::before {
         position: absolute;
         content: "";
         top: 0;
@@ -157,7 +167,7 @@
         height: 4px;
         width: 200px;
         background: rgb(250, 145, 72);
-        box-shadow: 1px 2px 10px rgb(250, 145, 72);
+        box-shadow: 0 0 10px rgb(250, 145, 72);
       }
     }
   }
@@ -174,6 +184,7 @@
   border-top: 4px solid #fff;
   padding-top: 6px;
   background: rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
   cursor: pointer;
   &__number {
     font-size: 24px;
@@ -199,7 +210,7 @@
   z-index: 1;
 }
 .header__aside {
-  background: rgba(82, 23, 23, 0.2);
+  background: rgba(82, 23, 23, 0.3);
   position: absolute;
   top: 0;
   left: 0;
@@ -208,29 +219,37 @@
   height: 100vh;
   width: 170px;
 }
-.header__logo{
+.header__logo {
   padding-top: 10px;
   min-height: 169px;
 }
-.menu{
-  &__list{
+.menu {
+  &__list {
     text-align: center;
-    li{
-      margin-bottom: 20px;
+    li {
+      margin-bottom: 5px;
     }
-    a{
+    a {
       display: inline-block;
       font-size: 12px;
       line-height: 14px;
       letter-spacing: 3px;
       font-weight: 500;
     }
-    span{
+    span {
       display: block;
     }
   }
 }
-
-
-
+// about-swamps-----------------------------------
+.about-swamps{
+  height: 100vh;
+}
+.about-swamps__map-wrapper{
+  background: #000;
+}
+.about-swamps__map{
+  width: 750px;
+  height: 500px;
+}
 @import "media";
