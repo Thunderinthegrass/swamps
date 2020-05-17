@@ -21,7 +21,9 @@
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "magnific-popup": "^1.1.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^5.4.0"
   }
 }
