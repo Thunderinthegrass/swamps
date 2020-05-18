@@ -186,7 +186,7 @@
         left: 0;
         height: 4px;
         width: 200px;
-        background: rgb(231, 53, 86);
+        background: #e73556;
         box-shadow: 0 0 10px #e73556;
       }
       &__south::before {
@@ -196,8 +196,8 @@
         left: 205px;
         height: 4px;
         width: 200px;
-        background: rgb(157, 189, 71);
-        box-shadow: 0 0 10px rgb(132, 164, 47);
+        background: #9dbd47;
+        box-shadow: 0 0 10px #84a42f;
       }
       &__nord::before {
         position: absolute;
@@ -206,8 +206,8 @@
         left: 410px;
         height: 4px;
         width: 200px;
-        background: rgb(192, 149, 81);
-        box-shadow: 0 0 10px rgb(192, 149, 81);
+        background: #c09551;
+        box-shadow: 0 0 10px #c09551;
       }
       &__east::before {
         position: absolute;
@@ -216,8 +216,8 @@
         left: 615px;
         height: 4px;
         width: 200px;
-        background: rgb(250, 145, 72);
-        box-shadow: 0 0 10px rgb(250, 145, 72);
+        background: #fa9148;
+        box-shadow: 0 0 10px #fa9148;
       }
     }
   }
