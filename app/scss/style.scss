@@ -60,11 +60,108 @@
 .header {
   position: relative;
   height: 100vh;
+  background-image: url(../img/105741-otrazhenie-boloto-nebo-pustynya-voda-2560x1707.jpg);
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+// radiobuttons
+
+.change__color[type="radio"] {
+  display: inline-block;
+  position: absolute;
+  left: 180px;
+  top: 20px;
+  z-index: 3;
+  width: 60px;
+  height: 20px;
+  -webkit-appearance: none;
+  background: linear-gradient(0deg, #333, #000);
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0, 0, 0, 1), 0 5px 20px rgba(0, 0, 0, .5), inset 0 0 15px rgba(0, 0, 0, .2);
+  cursor: pointer;
+}
+.change__color-east[type="radio"]{
+  left: 260px;
+}
+.change__color-nord[type="radio"]{
+  left: 340px;
+}
+.change__color-south[type="radio"]{
+  left: 420px;
+}
+
+.change__color-west:checked[type="radio"] {
+  background: linear-gradient(0deg, #e6687f, #E73556);
+}
+.change__color-east:checked[type="radio"] {
+  background: linear-gradient(0deg, #b1c286, #9dbd47);
+}
+.change__color-nord:checked[type="radio"] {
+  background: linear-gradient(0deg, #658096, #115b94);
+}
+.change__color-south:checked[type="radio"] {
+  background: linear-gradient(0deg, #ecc2a3, #fa9148);
+}
+
+.change__color[type="radio"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 20px;
+  background: linear-gradient(0deg, #000, #6b6b6b);
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #232323;
+  transform: scale(.98, .96);
+  transition: .4s;
+}
+.change__color:checked[type="radio"]::before {
+  left: 20px;
+}
+.change__color[type="radio"]::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 3px);
+  left: 27px;
+  width: 4px;
+  height: 4px;
+  background: linear-gradient(0deg, #6b6b6b, #000);
+  border-radius: 50%;
+  transition: .4s;
+}
+.change__color:checked[type="radio"]::after {
+  left: 48px;
+}
+.change__color-west:checked[type="radio"]::after {
+  background: #e6687f;
+  left: 48px;
+  box-shadow: 0 0 5px 2px #eb123a, 0 0 15px #eb123a;
+}
+.change__color-east:checked[type="radio"]::after {
+  background: #a9bd75;
+  left: 48px;
+  box-shadow: 0 0 5px 2px #87b610, 0 0 15px #87b610;
+}
+.change__color-nord:checked[type="radio"]::after {
+  background: #a4b1bd;
+  left: 48px;
+  box-shadow: 0 0 5px 2px #115b94, 0 0 15px 3px #115b94;
+}
+.change__color-south:checked[type="radio"]::after {
+  background: #e7ae85;
+  left: 48px;
+  box-shadow: 0 0 5px 2px #fa9148, 0 0 15px #fa9148;
+}
+
+// header-slider-block
 
 .header__slider {
   &-item-first {
-    background-image: url(../img/105741-otrazhenie-boloto-nebo-pustynya-voda-2560x1707.jpg);
+    // background-image: url(../img/105741-otrazhenie-boloto-nebo-pustynya-voda-2560x1707.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -77,7 +174,7 @@
     }
   }
   &-item-second {
-    background-image: url(../img/1572947272_7.jpg);
+    // background-image: url(../img/1572947272_7.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -89,7 +186,7 @@
     }
   }
   &-item-third {
-    background-image: url(../img/1572947375_25.jpg);
+    // background-image: url(../img/1572947375_25.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -101,7 +198,7 @@
     }
   }
   &-item-fourth {
-    background-image: url(../img/2618137.jpg);
+    // background-image: url(../img/2618137.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -175,8 +272,7 @@
     overflow: visible !important;
   }
   .slick-current {
-    // .header__aside-west {
-    // }
+    
     .dots-box {
       background: rgba(0, 0, 0, 0.438);
       &__west::before {
@@ -268,6 +364,8 @@
   border-right: 1px solid rgba(#fff, 0.25);
   height: 100vh;
   width: 170px;
+  position: fixed;
+  transition: .5s;
 }
 .header__logo {
   padding-top: 10px;
@@ -297,12 +395,14 @@
   height: 100vh;
   padding-top: 40px;
   position: relative;
+  margin-left: 170px;
   .slider-arrows {
     transform: translate(-70px, -90px);
   }
   // background: #221e1e;
 }
-.swamps__title{
+.swamps__title,
+.conductors__title{
   font-weight: 800;
   line-height: 86px;
   opacity: 0.8;
@@ -520,8 +620,8 @@
 }
 .slick-current {
   .slider__map-dots {
-    background: #f0a2b0;
-    box-shadow: 0px 0px 50px rgba($main-color, 1), 0px 0px 50px rgba($main-color, 1), 0px 0px 40px rgba($main-color, 1);
+    background: #ffffff!important;
+    box-shadow: 0px 0px 50px #fff, 0px 0px 50px #fff, 0px 0px 40px #fff!important;
   }
 }
 .map--dot-1 {
@@ -646,6 +746,8 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  margin-left: 170px;
+  position: relative;
  }
   .swiper-container{
   width: 100%;

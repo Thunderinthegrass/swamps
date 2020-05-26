@@ -22,7 +22,11 @@
     <span>наверх</span>
   </a href="#">
   <header class="header">
-    <div class="header__aside">
+    <input class="change__color change__color-west" name="change-color" type="radio" id="west-color" checked>
+    <input class="change__color change__color-east" name="change-color" type="radio" id="east-color">
+    <input class="change__color change__color-nord" name="change-color" type="radio" id="nord-color">
+    <input class="change__color change__color-south" name="change-color" type="radio" id="south-color">
+    <div class="header__aside" id="header__aside">
       <div class="header__logo">
         <!-- <a href=""><div class="smile">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 251 251">
@@ -365,7 +369,7 @@
           </div>
         </div>
       </div>
-      <div class="header__slider-item-second slider-item slider-item">
+      <div class="header__slider-item-second slider-item">
         <div class="header__slider-item-second-mask">
           <div class="header__map">
             <svg width="560" height="270" version="1.1" class="swamp-map" xmlns="http://www.w3.org/2000/svg"
@@ -537,7 +541,7 @@
     <section class="swamps" id="swamps">
       <div class="swamps__title" data-aos="fade-right">Карта болот</div>
       <div class="slider__map" data-aos="fade-in">
-        <div class="slider__map-dots map--dot-1" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+        <div class="slider__map-dots map--dot-1 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
           data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-1">
@@ -548,12 +552,12 @@
                 <span class="glitch">Самое зловещее место западных болот, но вместе с тем самое безопасное...</span>
               </div>
             </div>
-            <a href="#" class="slider__dots-btn">
+            <a href="#" class="slider__dots-btn color-theme-bg color-theme-border">
               <span class="slider__dots-btntext">жмяк</span>
             </a>
           </div>
         </div>
-        <div class="slider__map-dots map--dot-2" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+        <div class="slider__map-dots map--dot-2 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
           data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-2">
@@ -564,12 +568,12 @@
                 <span class="glitch">Самое зловещее место западных болот, но вместе с тем самое безопасное...</span>
               </div>
             </div>
-            <a href="#" class="slider__dots-btn">
+            <a href="#" class="slider__dots-btn color-theme-bg color-theme-border">
               <span class="slider__dots-btntext">жмяк</span>
             </a>
           </div>
         </div>
-        <div class="slider__map-dots map--dot-3" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+        <div class="slider__map-dots map--dot-3 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
           data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-3">
@@ -580,12 +584,12 @@
                 <span class="glitch">Самое зловещее место западных болот, но вместе с тем самое безопасное...</span>
               </div>
             </div>
-            <a href="#" class="slider__dots-btn">
+            <a href="#" class="slider__dots-btn color-theme-bg color-theme-border">
               <span class="slider__dots-btntext">жмяк</span>
             </a>
           </div>
         </div>
-        <div class="slider__map-dots map--dot-4" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+        <div class="slider__map-dots map--dot-4 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
           data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-4">
@@ -596,12 +600,12 @@
                 <span class="glitch">Самое зловещее место западных болот, но вместе с тем самое безопасное...</span>
               </div>
             </div>
-            <a href="#" class="slider__dots-btn">
+            <a href="#" class="slider__dots-btn color-theme-bg color-theme-border">
               <span class="slider__dots-btntext">жмяк</span>
             </a>
           </div>
         </div>
-        <div class="slider__map-dots map--dot-5" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+        <div class="slider__map-dots map--dot-5 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
           data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-5">
@@ -612,12 +616,12 @@
                 <span class="glitch">Самое зловещее место западных болот, но вместе с тем самое безопасное...</span>
               </div>
             </div>
-            <a href="#" class="slider__dots-btn">
+            <a href="#" class="slider__dots-btn color-theme-bg color-theme-border">
               <span class="slider__dots-btntext">жмяк</span>
             </a>
           </div>
         </div>
-        <div class="slider__map-dots map--dot-6" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+        <div class="slider__map-dots map--dot-6 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
           data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-6">
@@ -628,12 +632,12 @@
                 <span class="glitch">Самое зловещее место западных болот, но вместе с тем самое безопасное...</span>
               </div>
             </div>
-            <a href="#" class="slider__dots-btn">
+            <a href="#" class="slider__dots-btn color-theme-bg color-theme-border">
               <span class="slider__dots-btntext">жмяк</span>
             </a>
           </div>
         </div>
-        <div class="slider__map-dots map--dot-7" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+        <div class="slider__map-dots map--dot-7 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
           data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-7">
@@ -644,12 +648,12 @@
                 <span class="glitch">Самое зловещее место западных болот, но вместе с тем самое безопасное...</span>
               </div>
             </div>
-            <a href="#" class="slider__dots-btn">
+            <a href="#" class="slider__dots-btn color-theme-bg color-theme-border">
               <span class="slider__dots-btntext">жмяк</span>
             </a>
           </div>
         </div>
-        <div class="slider__map-dots map--dot-8" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+        <div class="slider__map-dots map--dot-8 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
           data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-8">
@@ -660,12 +664,12 @@
                 <span class="glitch">Самое зловещее место западных болот, но вместе с тем самое безопасное...</span>
               </div>
             </div>
-            <a href="#" class="slider__dots-btn">
+            <a href="#" class="slider__dots-btn color-theme-bg color-theme-border">
               <span class="slider__dots-btntext">жмяк</span>
             </a>
           </div>
         </div>
-        <div class="slider__map-dots map--dot-9" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+        <div class="slider__map-dots map--dot-9 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
           data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-9">
@@ -676,7 +680,7 @@
                 <span class="glitch">Самое зловещее место западных болот, но вместе с тем самое безопасное...</span>
               </div>
             </div>
-            <a href="#" class="slider__dots-btn">
+            <a href="#" class="slider__dots-btn color-theme-bg color-theme-border">
               <span class="slider__dots-btntext">жмяк</span>
             </a>
           </div>
@@ -802,6 +806,7 @@
       </div>
     </section>
     <section class="conductors">
+      <div class="conductors__title">Проводники</div>
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide slide1"></div>

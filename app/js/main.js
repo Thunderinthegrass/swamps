@@ -101,7 +101,126 @@ function btnToTop() {
 btnToTop();
 
 
+// radiobuttons--------------------
 
+let westColor = document.querySelector('#west-color');
+let eastColor = document.querySelector('#east-color');
+let nordColor = document.querySelector('#nord-color');
+let southColor = document.querySelector('#south-color');
+let headerAside = document.querySelector('#header__aside');
+let contBg = document.querySelector('body');
+let headerBg = document.querySelector('.header');
+let colorThemeBg = document.querySelectorAll('.color-theme-bg');
+let colorThemeBorder = document.querySelectorAll('.color-theme-border')
+let sliderDotsContent = document.querySelectorAll('.slider__dots-content');
+let colorThemeShadow = document.querySelectorAll('.color-theme-shadow');
+let slickCurrent = document.querySelector('.slick-current');
+
+
+westColor.onclick = () => {
+  if (westColor.checked) {
+   headerAside.style.backgroundColor = 'rgba(82, 23, 23, 0.3)';
+   contBg.style.backgroundColor = '#211919';
+   headerBg.style.backgroundImage = 'url(../img/105741-otrazhenie-boloto-nebo-pustynya-voda-2560x1707.jpg)';
+  //  slickCurrent.style.backgroundColor = '#F0A2B0';
+
+  colorThemeBg.forEach(element =>{
+    element.style.backgroundColor = '#E73556';
+  });
+
+  sliderDotsContent.forEach(element =>{
+    element.style.backgroundColor = 'rgba(231,53,86, 0.5)';
+    element.style.border = '1px solid #E73556'
+  });
+
+  colorThemeBorder.forEach(element =>{
+    element.style.border = '1px solid #E73556'
+  });
+
+  colorThemeShadow.forEach(element =>{
+    element.style.boxShadow = '0px 0px 35px rgba(231,53,86,0.8)';
+  });
+
+  }
+}
+
+eastColor.onclick = () => {
+  if (eastColor.checked) {
+   headerAside.style.backgroundColor = 'rgba(109, 149, 58, 0.3)';
+   contBg.style.backgroundColor = '#141815';
+   headerBg.style.backgroundImage = 'url(../img/1572947272_7.jpg)';
+  
+  colorThemeBg.forEach(element =>{
+    element.style.backgroundColor = '#9dbd47';
+  });
+
+  sliderDotsContent.forEach(element =>{
+    element.style.backgroundColor = 'rgba(157,189,71, 0.5)';
+    element.style.border = '1px solid #9DBD47'
+  });
+
+  colorThemeBorder.forEach(element =>{
+    element.style.border = '1px solid #9DBD47'
+  });
+
+  colorThemeShadow.forEach(element =>{
+    element.style.boxShadow = '0px 0px 35px rgba(177,194,134, 0.8)';
+  });
+
+  }
+}
+
+nordColor.onclick = () => {
+  if (nordColor.checked) {
+   headerAside.style.backgroundColor = 'rgba(17, 91, 148, 0.3)';
+   contBg.style.backgroundColor = '#171f24';
+   headerBg.style.backgroundImage = 'url(../img/nord-swamps.jpg)';
+  
+  colorThemeBg.forEach(element =>{
+    element.style.backgroundColor = '#115b94';
+  });
+
+  sliderDotsContent.forEach(element =>{
+    element.style.backgroundColor = 'rgba(17,91,148, 0.5)';
+    element.style.border = '1px solid #115B94'
+  });
+
+  colorThemeBorder.forEach(element =>{
+    element.style.border = '1px solid #115B94'
+  });
+
+  colorThemeShadow.forEach(element =>{
+    element.style.boxShadow = '0px 0px 35px rgba(97, 145, 190, 0.8)';
+  });
+
+  }
+}
+
+southColor.onclick = () => {
+  if (southColor.checked) {
+   headerAside.style.backgroundColor = 'rgba(250, 145, 72, 0.2)';
+   contBg.style.backgroundColor = '#27211d';
+   headerBg.style.backgroundImage = 'url(../img/2618137.jpg)';
+ 
+  colorThemeBg.forEach(element =>{
+    element.style.backgroundColor = '#fa9148';
+  });
+
+  sliderDotsContent.forEach(element =>{
+    element.style.backgroundColor = 'rgba(250,145,72, 0.5)';
+    element.style.border = '1px solid #FA9148'
+  });
+
+  colorThemeBorder.forEach(element =>{
+    element.style.border = '1px solid #FA9148'
+  });
+
+  colorThemeShadow.forEach(element =>{
+    element.style.boxShadow = '0px 0px 35px rgba(231, 174, 133, 0.8)';
+  });
+
+  }
+}
 
 
   AOS.init({
