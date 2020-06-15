@@ -14,7 +14,6 @@ body {
   font-family: "Fira Sans", sans-serif;
   color: #fff;
   outline: none;
-  background-color: $bg;
 }
 .container {
   max-width: 1920px;
@@ -111,18 +110,6 @@ a {
   }
 }
 
-.btn::after,
-.btn::before {
-  content: "";
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  border: 3px solid #921138;
-  top: -8px;
-  z-index: 1;
-  // transition: 1s;
-}
-
 .btn::before {
   left: 15%;
   animation: btn-bef 5s linear infinite;
@@ -151,33 +138,6 @@ a {
   100% {
     transform: rotate(365deg);
   }
-}
-
-.btn-text {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  overflow: hidden;
-  padding: 5px 30px 5px;
-  color: #fff;
-  transition: 0.1s;
-  box-shadow: 0 10px 0 0 #921138;
-
-  span {
-    z-index: 2;
-  }
-}
-
-.btn-text::after,
-.btn-text::before {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  background: $main-color;
-  top: 0;
 }
 
 .btn-text::before {
