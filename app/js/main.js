@@ -63,6 +63,16 @@ for (let anchor of anchors) {
 }
 
 
+// прелоадер---------------------
+window.onload = function () {
+  document.body.classList.add('loaded_hiding');
+  window.setTimeout(function () {
+    document.body.classList.add('loaded');
+    document.body.classList.remove('loaded_hiding');
+  }, 200);
+}
+
+
 // progress-bar--------------------------------------------
 
 const progress = document.querySelector('.progress');
@@ -103,6 +113,8 @@ btnToTop();
 
 // radiobuttons--------------------
 
+let changeLanguage = document.querySelector('.change__language');
+let en = document.querySelector('.en');
 let westColor = document.querySelector('#west-color');
 let eastColor = document.querySelector('#east-color');
 let nordColor = document.querySelector('#nord-color');
@@ -115,7 +127,22 @@ let colorThemeBorder = document.querySelectorAll('.color-theme-border')
 let sliderDotsContent = document.querySelectorAll('.slider__dots-content');
 let colorThemeShadow = document.querySelectorAll('.color-theme-shadow');
 let slickCurrent = document.querySelector('.slick-current');
+let sliderItemInfoTitle = document.querySelector('.slider-item__info-title');
 
+
+
+changeLanguage.onclick = () => {
+  if (changeLanguage.checked) {
+    sliderItemInfoTitle.innerHTML = ('EAST SWAMPS');
+    en.style.color = '#fff';
+    en.style.textShadow = '0 0 5px #fff, 0 0 15px #fff';
+  }
+  else{
+    sliderItemInfoTitle.innerHTML = ('западные болота');
+    en.style.textShadow = 'none';
+    en.style.color = 'rgba(255, 255, 255, 0.7)';
+  }
+}
 
 westColor.onclick = () => {
   if (westColor.checked) {
@@ -165,7 +192,7 @@ eastColor.onclick = () => {
 
   colorThemeShadow.forEach(element =>{
     element.style.boxShadow = '0px 0px 35px rgba(177,194,134, 0.8)';
-  });
+  }); 
 
   }
 }
@@ -223,6 +250,8 @@ southColor.onclick = () => {
 }
 
 
+
+// aos----------------------------
   AOS.init({
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -245,3 +274,5 @@ southColor.onclick = () => {
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
   });
+
+  

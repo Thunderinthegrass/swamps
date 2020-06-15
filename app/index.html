@@ -17,6 +17,40 @@
 </head>
 
 <body>
+  <div class="preloader">
+    <div class="wineglass-wrapper">
+      <svg class="wineglass-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.31 183.73">
+        <g class="wine-left" data-name="Слой 4">
+          <path class="cls-1" d="M499.21,254a36.81,36.81,0,0,0,72.68-.25Z" transform="translate(-497.76 -184.83)" />
+        </g>
+        <g id="Слой_3" data-name="Слой 3">
+          <path class="cls-2"
+            d="M529.83,351.5a21.65,21.65,0,0,0,1.83-6c.83-2.83,1.17-32.66,1.17-32.66s-.34-23.5-6-28.17c-11.34-5-20.34-11.17-26.34-24.33-8.33-24,9.34-75,9.34-75H561s17.67,51,9.33,75c-6,13.17-15,19.34-26.33,24.34-5.67,4.66-6,28.16-6,28.16s.33,29.84,1.17,32.67a21.39,21.39,0,0,0,1.83,6"
+            transform="translate(-497.76 -184.83)" />
+          <path class="cls-2"
+            d="M504,360c-3.16-3.83,18.34-8.33,25.84-8.5,0,0-3.34,4.17-7.67,5.84,3.83,1.33,13.17,1.16,13.17,1.16h.17s9.33.17,13.17-1.17c-4.34-1.66-7.67-5.83-7.67-5.83,7.5.17,29,4.67,25.83,8.5-5.16,6.67-31.42,6.21-31.42,6.21S509.16,366.67,504,360Z"
+            transform="translate(-497.76 -184.83)" />
+          <path class="cls-2" d="M567.15,359.59c1.23,7.66-31.56,8.47-31.56,8.47S505.38,367.5,504,360"
+            transform="translate(-497.76 -184.83)" />
+        </g>
+      </svg>
+      <svg class="wineglass-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.31 183.73">
+        <g class="wine-right" data-name="Слой 4">
+          <path class="cls-1" d="M499.21,254a36.81,36.81,0,0,0,72.68-.25Z" transform="translate(-497.76 -184.83)" />
+        </g>
+        <g id="Слой_3" data-name="Слой 3">
+          <path class="cls-2"
+            d="M529.83,351.5a21.65,21.65,0,0,0,1.83-6c.83-2.83,1.17-32.66,1.17-32.66s-.34-23.5-6-28.17c-11.34-5-20.34-11.17-26.34-24.33-8.33-24,9.34-75,9.34-75H561s17.67,51,9.33,75c-6,13.17-15,19.34-26.33,24.34-5.67,4.66-6,28.16-6,28.16s.33,29.84,1.17,32.67a21.39,21.39,0,0,0,1.83,6"
+            transform="translate(-497.76 -184.83)" />
+          <path class="cls-2"
+            d="M504,360c-3.16-3.83,18.34-8.33,25.84-8.5,0,0-3.34,4.17-7.67,5.84,3.83,1.33,13.17,1.16,13.17,1.16h.17s9.33.17,13.17-1.17c-4.34-1.66-7.67-5.83-7.67-5.83,7.5.17,29,4.67,25.83,8.5-5.16,6.67-31.42,6.21-31.42,6.21S509.16,366.67,504,360Z"
+            transform="translate(-497.76 -184.83)" />
+          <path class="cls-2" d="M567.15,359.59c1.23,7.66-31.56,8.47-31.56,8.47S505.38,367.5,504,360"
+            transform="translate(-497.76 -184.83)" />
+        </g>
+      </svg>
+    </div>
+  </div>
   <div class="progress"></div>
   <a href="#" class="btn-totop">
     <span>наверх</span>
@@ -26,6 +60,8 @@
     <input class="change__color change__color-east" name="change-color" type="radio" id="east-color">
     <input class="change__color change__color-nord" name="change-color" type="radio" id="nord-color">
     <input class="change__color change__color-south" name="change-color" type="radio" id="south-color">
+    <input class="change__language" name="change-color" type="checkbox">
+    <div class="en">EN</div>
     <div class="header__aside" id="header__aside">
       <div class="header__logo">
         <!-- <a href=""><div class="smile">
@@ -541,8 +577,8 @@
     <section class="swamps" id="swamps">
       <div class="swamps__title" data-aos="fade-right">Карта болот</div>
       <div class="slider__map" data-aos="fade-in">
-        <div class="slider__map-dots map--dot-1 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-          data-aos-duration="500">
+        <div class="slider__map-dots map--dot-1 color-theme-bg color-theme-shadow" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic" data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-1">
             <div class="slider__dots-contenttitle">
@@ -557,8 +593,8 @@
             </a>
           </div>
         </div>
-        <div class="slider__map-dots map--dot-2 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-          data-aos-duration="500">
+        <div class="slider__map-dots map--dot-2 color-theme-bg color-theme-shadow" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic" data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-2">
             <div class="slider__dots-contenttitle">
@@ -573,8 +609,8 @@
             </a>
           </div>
         </div>
-        <div class="slider__map-dots map--dot-3 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-          data-aos-duration="500">
+        <div class="slider__map-dots map--dot-3 color-theme-bg color-theme-shadow" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic" data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-3">
             <div class="slider__dots-contenttitle">
@@ -589,8 +625,8 @@
             </a>
           </div>
         </div>
-        <div class="slider__map-dots map--dot-4 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-          data-aos-duration="500">
+        <div class="slider__map-dots map--dot-4 color-theme-bg color-theme-shadow" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic" data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-4">
             <div class="slider__dots-contenttitle">
@@ -605,8 +641,8 @@
             </a>
           </div>
         </div>
-        <div class="slider__map-dots map--dot-5 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-          data-aos-duration="500">
+        <div class="slider__map-dots map--dot-5 color-theme-bg color-theme-shadow" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic" data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-5">
             <div class="slider__dots-contenttitle">
@@ -621,8 +657,8 @@
             </a>
           </div>
         </div>
-        <div class="slider__map-dots map--dot-6 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-          data-aos-duration="500">
+        <div class="slider__map-dots map--dot-6 color-theme-bg color-theme-shadow" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic" data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-6">
             <div class="slider__dots-contenttitle">
@@ -637,8 +673,8 @@
             </a>
           </div>
         </div>
-        <div class="slider__map-dots map--dot-7 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-          data-aos-duration="500">
+        <div class="slider__map-dots map--dot-7 color-theme-bg color-theme-shadow" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic" data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-7">
             <div class="slider__dots-contenttitle">
@@ -653,8 +689,8 @@
             </a>
           </div>
         </div>
-        <div class="slider__map-dots map--dot-8 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-          data-aos-duration="500">
+        <div class="slider__map-dots map--dot-8 color-theme-bg color-theme-shadow" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic" data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-8">
             <div class="slider__dots-contenttitle">
@@ -669,8 +705,8 @@
             </a>
           </div>
         </div>
-        <div class="slider__map-dots map--dot-9 color-theme-bg color-theme-shadow" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-          data-aos-duration="500">
+        <div class="slider__map-dots map--dot-9 color-theme-bg color-theme-shadow" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic" data-aos-duration="500">
           <div class="slider__dots-circle"></div>
           <div class="slider__dots-content slider__dots-content-9">
             <div class="slider__dots-contenttitle">
@@ -806,7 +842,7 @@
       </div>
     </section>
     <section class="conductors">
-      <div class="conductors__title">Проводники</div>
+      <div class="conductors__title" data-aos="fade-right">Проводники</div>
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide slide1"></div>

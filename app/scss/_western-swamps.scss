@@ -1,16 +1,15 @@
 .western-inner{
   height: 100vh;
   background-image: url(../img/105741-otrazhenie-boloto-nebo-pustynya-voda-2560x1707.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
   background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 100vh;
 }
 .western-inner__container{
   width: 1150px;
   height: 100vh;
-  background: rgba(26, 6, 24, 0.349);
+  background: rgba(26, 6, 24, 0.3);
   margin: 0 auto;
   padding: 0 15px;
 }
