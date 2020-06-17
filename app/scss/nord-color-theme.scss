@@ -1,0 +1,53 @@
+@import "vars";
+
+body{
+  background: $nord-bg;
+}
+.progress{
+  background: $nord-color;
+}
+.btn-totop{
+  border: 1px solid $nord-color;
+  &:hover {
+    ::before {
+      border-left: 1px solid $nord-color;
+      border-top: 1px solid $nord-color;
+    }
+  }
+}
+.header__aside{
+  background: rgba(17, 91, 148, 0.3);
+}
+.slider__dots-btn{
+  background: $nord-color;
+  border: 1px solid $nord-color;
+  .slider__dots-btntext:hover{
+    .slider__dots-btntext{
+      color: $nord-color;
+    }
+  }
+}
+.slider__map-dots{
+  background: $nord-color;
+  box-shadow: 0px 0px 35px rgba($nord-color, 0.8);
+  &:hover {
+    box-shadow: 0px 0px 15px rgba($nord-color, 0.8), 0px 0px 35px rgba($nord-color, 1);
+  }
+  &:active {
+    border: 1px solid #b60d2c;
+    box-shadow: 0px 0px 15px rgba($nord-color, 0.8), 0px 0px 35px rgba($nord-color, 0.8);
+  }
+}
+.slider__map{
+   .slider__dots-content{
+     border: 1px solid $nord-color;
+   }
+   .slick-current{
+     .slider__dots-content{
+       background: rgba(17,91,148, 0.5);
+     }
+   }
+ }
+.btn:active .btn-text{
+  box-shadow: 0 0 2px #e73556, 0 0 15px #e73556, 0px 0 35px #e73556;
+}

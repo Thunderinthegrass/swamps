@@ -104,7 +104,7 @@ function btnToTop() {
 
   button.on('click', (e) => {
     e.preventDefault();
-    $('html').animate({scrollTop: 0}, 800);
+    $('html').animate({scrollTop: 0}, 500);
   })
 }
 
@@ -148,7 +148,7 @@ westColor.onclick = () => {
   if (westColor.checked) {
     let style = document.getElementById("style")
     if (westColor.checked) {
-    style.href = "../css/style.min.css";
+    style.href = "../css/west-color-theme.min.css";
     }
 
   }
@@ -157,7 +157,7 @@ westColor.onclick = () => {
 eastColor.onclick = () => {
   let style = document.getElementById("style")
   if (eastColor.checked) {
-  style.href = "../css/green-theme.min.css";
+  style.href = "../css/green-color-theme.min.css";
   }
   else{
     
@@ -188,6 +188,13 @@ nordColor.onclick = () => {
   // });
 
   // }
+  let style = document.getElementById("style")
+  if (nordColor.checked) {
+  style.href = "../css/nord-color-theme.min.css";
+  }
+  else{
+    
+  }
 }
 
 southColor.onclick = () => {

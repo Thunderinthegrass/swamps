@@ -1,0 +1,53 @@
+@import "vars";
+
+body{
+  background: $west-bg;
+}
+.progress{
+  background: $main-color;
+}
+.btn-totop{
+  border: 1px solid $main-color;
+  &:hover {
+    ::before {
+      border-left: 1px solid $main-color;
+      border-top: 1px solid $main-color;
+    }
+  }
+}
+.header__aside{
+  background: rgba(82, 23, 23, 0.3);
+}
+.slider__dots-btn{
+  background: $main-color;
+  border: 1px solid $main-color;
+  .slider__dots-btntext:hover{
+    .slider__dots-btntext{
+      color: $main-color;
+    }
+  }
+}
+.slider__map-dots{
+  background: $main-color;
+  box-shadow: 0px 0px 35px rgba($main-color, 0.8);
+  &:hover {
+    box-shadow: 0px 0px 15px rgba($main-color, 0.8), 0px 0px 35px rgba($main-color, 1);
+  }
+  &:active {
+    border: 1px solid #b60d2c;
+    box-shadow: 0px 0px 15px rgba($main-color, 0.8), 0px 0px 35px rgba($main-color, 0.8);
+  }
+}
+.slider__map{
+   .slider__dots-content{
+     border: 1px solid $main-color;
+   }
+   .slick-current{
+     .slider__dots-content{
+       background: rgba(82, 23, 23, 0.5);
+     }
+   }
+ }
+.btn:active .btn-text{
+  box-shadow: 0 0 2px #e73556, 0 0 15px #e73556, 0px 0 35px #e73556;
+}
