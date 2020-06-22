@@ -165,29 +165,6 @@ eastColor.onclick = () => {
 }
 
 nordColor.onclick = () => {
-  // if (nordColor.checked) {
-  //  headerAside.style.backgroundColor = 'rgba(17, 91, 148, 0.3)';
-  //  contBg.style.backgroundColor = '#171f24';
-  //  headerBg.style.backgroundImage = 'url(../img/nord-swamps.jpg)';
-  
-  // colorThemeBg.forEach(element =>{
-  //   element.style.backgroundColor = '#115b94';
-  // });
-
-  // sliderDotsContent.forEach(element =>{
-  //   element.style.backgroundColor = 'rgba(17,91,148, 0.5)';
-  //   element.style.border = '1px solid #115B94'
-  // });
-
-  // colorThemeBorder.forEach(element =>{
-  //   element.style.border = '1px solid #115B94'
-  // });
-
-  // colorThemeShadow.forEach(element =>{
-  //   element.style.boxShadow = '0px 0px 35px rgba(97, 145, 190, 0.8)';
-  // });
-
-  // }
   let style = document.getElementById("style")
   if (nordColor.checked) {
   style.href = "../css/nord-color-theme.min.css";
@@ -221,6 +198,13 @@ southColor.onclick = () => {
   // });
 
   // }
+  let style = document.getElementById("style")
+  if (southColor.checked) {
+  style.href = "../css/south-color-theme.min.css";
+  }
+  else{
+    
+  }
 }
 
 
