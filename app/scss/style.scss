@@ -458,6 +458,83 @@
     }
   }
 }
+.clock{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 35px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  font-family: consolas;
+}
+.clock::before{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  z-index: 100;
+  border-radius: 50%;
+}
+.hour,
+.min,
+.sec{
+  position: absolute;
+}
+.hour, .hr{
+  width: 60px;
+  height: 60px;
+}
+.min, .mn{
+  width: 80px;
+  height: 80px;
+}
+.sec, .sc{
+  width: 96px;
+  height: 96px;
+}
+.hr, .mn, .sc{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.hr::before{
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 30px;
+  background: #fff;
+}
+.mn::before{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 40px;
+  background: #fff;
+}
+.sc::before{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 48px;
+  background: #fff;
+}
+.digital-clock{
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  padding-left: 6px;
+	color: #fff;
+	font-size: 2em;
+}
+.digit-hour,
+.digit-minutes,
+.digit-seconds{
+  width: 43px;
+}
 // about-swamps-----------------------------------
 
 .swamps {

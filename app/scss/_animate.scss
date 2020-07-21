@@ -462,8 +462,8 @@
 .gnat2-wrap {
   position: absolute;
   left: 80px;
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
   transition: 0.5s;
 }
@@ -543,7 +543,7 @@
   }
 }
 .gnat1 {
-  width: 7px;
+  width: 6px;
   animation: gnat1 5s linear infinite;
 }
 @keyframes gnat1 {
